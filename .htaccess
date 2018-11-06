@@ -2,6 +2,6 @@ AuthUserFile .htpasswd
 AuthType Basic
 AuthName "My Secret Page"
 
-<Files "mypage.html">
+<Files "index.html">
   Require valid-user
 </Files>
