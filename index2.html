@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title></title>
 
@@ -8,73 +7,71 @@
 </head>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=VT323');
 body {
-	
-	background-image: url('grunge_patterns.jpg');
-	background-attachment: fixed;
-	color: #333;
+  background-color: #ffffff;
+  display: table;
 }
+
+.div1 {
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.div2 {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: VT323;
+  font-size: 25px;
+  color: #656262;
+}
+
 .box {
-	border-radius: 3px;
-	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+  text-align: center;
+  font-size: 20px;
+  font-family: VT323;
+  outline: none;
+  width: 250px;
+  height: 35px;
+  border: none;
+  border-bottom: 2px solid #656262;
 }
-.lightbox {
-	zoom: 1.5;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(10, 10, 10, 0.8);
-	text-align: center;
-	margin: auto;
-	
-}
-div.horizontal {
-	display: flex;
-	justify-content: center;
-	height: 100%;
-}
-div.vertical {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-}
-::-webkit-input-placeholder {
-   color: #955;
-   text-align: center;
-}
-::-moz-placeholder {  
-   color: #955;
-   text-align: center;
-}
-:-ms-input-placeholder {  
-   color: #955;
-   text-align: center;
+
+.confirm {
+  border: none;
+  font-size: 20px;
+  font-family: VT323;
+  margin-top: 10px;
+  color: #656262;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 </style>
 
 <body>
 	
-	<div id="loginbox" class="lightbox" >
-		<div class="horizontal">
-			<div class="vertical">
-				<div class="box">				
-					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
-					<button id="loginbutton" type="button">Enter</button>
-					<p id="wrongPassword" style="display: none">wrong password</p>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="div1">
+    		<div class="div2">
+      			<form>
+        			<label for="pswd">ENTER PASSWORD</label>
+        			<br>
+        			<input class="box" type="password" id="pswd">
+        			<br>
+        			<input class="confirm" type="button" value="SUBMIT" onclick="loadPage(pswd);" />
+      			</form>
+    		</div>
+  	</div>
 
 
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	 
 
-	 <script type="text/javascript" src="https://cdn.rawgit.com/chrisveness/crypto/master/sha1.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/chrisveness/crypto/master/sha1.js"></script>
 
 	<script type="text/javascript">
 	"use strict";
