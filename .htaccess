@@ -1,5 +1,7 @@
-<Files ~ "^\.(htaccess|htpasswd)$">
-deny from all
+AuthUserFile /full/path/to/.htpasswd
+AuthType Basic
+AuthName "My Secret Page"
+
+<Files "mypage.html">
+  Require valid-user
 </Files>
-DirectoryIndex index.html       
-order deny,allow
