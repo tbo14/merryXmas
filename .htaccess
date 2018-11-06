@@ -1,4 +1,4 @@
-AuthUserFile .htpasswd
+AuthUserFile merryXmas/.htpasswd
 AuthType Basic
 AuthName "My Secret Page"
 
