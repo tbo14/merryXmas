@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<title>Merry Christmas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("Jigsaw.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s4">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="https://tbo14.github.io/merryXmas/" class="w3-button w3-block w3-black">PASSWORT EINGABE</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="https://tbo14.github.io/merryXmas/41b24d3bcf15e7da57eb1bb5c65279d6a4621bd1/help.html" class="w3-button w3-block w3-black">HELP</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">pw:hilfe</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">HILFE?</span></h5>
+    <p>So schnell sieht man sich also wieder. Hast du tatsächlich zwischen den Zeilen gelesen oder hast du einfach nur verzweifelt auf Hilfe geklickt? Naja, jetzt bist du hier. Leider ist niemand gekommen um dir zu helfen. Es sind nur du und ich hier.</p>
+    <p>Eins wollen wir mal klar stellen. Ich bin nicht hier um dir zu helfen. Eher das Gegenteil. Solltest du wirklich mal Hilfe brauchen, weißt du an wen du dich wenden solltest.</p>
+    <p>Aber jetzt wo du schon mal hier bist, kann ich dir das ein oder andere erklären.</p>
+    <img src="password-screen.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p>Dieses Eingabefeld sollte dir bekannt vorkommen. Du wirst es noch oft brauchen. Oben in der Leiste kommst du mit einem Klick auf 'PASSWORT EINGABE' zu genau diesem Feld. Um bei diesem Spiel weiter zu kommen musst du das neue Passwort herausfinden und auf der Seite eingeben. So kommst du von einem Level in das nächste.</p>
+    <p>Probiere es mal mit <strong>echterstart</strong>. Es wird nicht immer so leicht sein. Manchmal musst du über den Tellerrand hinausschauen um an das Passwort zu bekommen und wer weiß, ob es überhaupt immer ein Passwort gibt.</p>
+    <p>Ich schätze wir sehen uns wieder, wenn du das nächste mal angekrochen kommst und um Hilfe bettelst. Hehehehe.</p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+    
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
