@@ -1,7 +1,7 @@
-AuthUserFile .htpasswd
+//Password Protect file
+<Files index.html>
+AuthName "Prompt"
 AuthType Basic
-AuthName "My Secret Page"
-
-<Files "index.html">
-  Require valid-user
+AuthUserFile .htpasswd
+Require valid-user
 </Files>
