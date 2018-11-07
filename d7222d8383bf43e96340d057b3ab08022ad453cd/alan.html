@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<title>Merry Christmas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("alan.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s4">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="https://tbo14.github.io/merryXmas/" class="w3-button w3-block w3-black">PASSWORT EINGABE</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="https://tbo14.github.io/merryXmas/help.html" class="w3-button w3-block w3-black">HELP</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">pw:conan</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">CONAN</span></h5>
+    <div class="w3-panel w3-leftbar w3-pale-red">
+      <p>Es ist tatsächlich Conan Edogawa. Kein Zweifel. Du rufst nach ihm und er hört dich. Er stellt sich auf eine Kiste, so dass er dich durch das Fenster ansehen kann, während er mit dir redet. Du fragst ihn nach Jigsaw.</p>
+    </div>
+    <p>Die Person auf dem Dreirad? Hatte ich mir doch gleich gedacht, dass es kein Kind im Halloween Kostüm war. Tut mir Leid, ich weiß nicht wo er hin ist. Aber er kann nicht weit gekommen sein.</p>
+    <p>Ich folge gerade einer heißen Spur, die mich zur schwarzen Organisation führen könnte. Ich muss weiter. Hier nimm das, mehr kann ich nicht für dich tun.</p>
+    <div class="w3-panel w3-leftbar w3-pale-red">
+      <p>Glückwunsch. Du hast dein erstes Geschenk erhalten!</p>
+    </div>
+    
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Geschenk öffnen</button>
+    <div id="id01" class="w3-modal w3-center">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-pale-red"> 
+          <span onclick="document.getElementById('id01').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+          <h2>Water-Gel Toner</h2>
+        </header>
+        <div class="w3-container">
+          <img src="Martian.jpg" style="width:60%;max-width:1000px" class="w3-margin-top center">
+          <p>Martian</p>
+          <p>Mattifying Melting Water-Gel Toner von Sunday Riley</p>
+        </div>
+        <footer class="w3-container w3-pale-red">
+        </footer>
+      </div>
+    </div>
+    <p>Achja, bevor ich es vergesse. Ich habe gesehen wie ein fülliger bärtiger Mann dich mit einer Schubkarre in das Gebäude gebracht hat. Ich dachte ihr seid am feiern gewesen und ich seinem Auftreten nach gehörte er definitiv nicht zur schwarzen Organisiation, deswegen habe ich mich nicht eingemischt. Wenn du nach Antworten suchst dann ist er eine gute Anlaufstation. Er müsste noch im Gebäude sein.</p>
+    <button class="w3-button w3-block" href="https://tbo14.github.io/merryXmas/d7222d8383bf43e96340d057b3ab08022ad453cd/alan.html">Im Gebäude umsehen</button>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+    
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
