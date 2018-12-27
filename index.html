@@ -78,7 +78,7 @@ body {
 	function loadPage(pwd) {
 		
 		var hash= pwd;
-		hash= Sha1.hash(pwd);
+		hash= sha1(pwd);
 		var url= hash + "/index.html";
 			
 		$.ajax({
