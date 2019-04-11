@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>Merry Christmas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("batman.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+</style>
+<body>
 
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s4">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="https://tbo14.github.io/merryXmas/" class="w3-button w3-block w3-black">PASSWORT EINGABE</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="https://tbo14.github.io/merryXmas/help.html" class="w3-button w3-block w3-black">HELP</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">pw:batman</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">BATMAN</span></h5>
+    <div class="w3-panel w3-leftbar w3-pale-red">
+      <p>Du siehst dich um und erkennst plötzlich eine Gestalt in der dunklen Ecke des Raumes. Als du dich näherst, erkennst du, es ist eine lebensechte Statue in Batman-Form. Es ist etwas creepy und du fühlst dich als wärst du Nachts allein bei Madame Tussauds. Du willst den Anzug mal anfassen und streckst deinen Finger aus.</p>
+    </div>
+    <p>Hey! Nicht anfassen! Das ist ein Prototyp und hat diesmal keine Nippel (endlich). Ich bin Batman! Ich muss mich regelmäßig meinen Ängsten stellen, also hocke ich hier in diesem Haus in dem es überall vor Fledermäusen so wimmelt.</p>
+    <p>Ein paar Gangster treiben sich hier auch manchmal rum, also ein win-win. Jetzt hast du aber meine Deckung auffliegen lassen!</p>
+    <p>Ich sehe es übrigens in deinen Augen ... du willst auch ein Superheld sein. Hier nimm das. Das sind ein paar Einstigermasken. Sie helfen dir bei der Tarnung.</p>
+    
+    <div class="w3-panel w3-leftbar w3-pale-red">
+      <p>Während Batman davon läuft und sein Umhang im Wind flattert, hörst du wie er die Batman Meloadie singt.</p>
+    </div>
+    <div class="w3-panel w3-leftbar w3-pale-red">
+    <p>Glückwunsch. Du hast ein weiteres Geschenk erhalten!</p>
+    </div>
+    
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black w3-center">Geschenk öffnen</button>
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-pale-red"> 
+          <span onclick="document.getElementById('id01').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+          <h2>Masks and Scrubs</h2>
+        </header>
+        <div class="w3-container">
+          <img src="masken.jpg" style="width:60%;max-width:1000px" class="w3-margin-top center">
+          <p>Gifts of Nature - Ice cube mask set</p>
+          <p>Create the ultimate skin indulgence with these three natural elements.
+            Use Lava Scrub to exfoliate your skin, leaving it smooth and energized. Deep-cleanse your skin with Silica Mud Mask for a clear, clean complexion. Finally, nourish and firm your skin with Algae Mask. The mask's unique composition is proven to increase collagen.
+            For an added energy boost, place these cubes in the freezer for one hour before using them.
+            Enjoy our natural elements lava, silica and algae. Each dose can be applied unfrozen or straight from the freezer, when you really need an energy boost.
+            It is our pleasure to bring the wonders of Blue Lagoon to your home.</p>
+        </div>
+        <footer class="w3-container w3-pale-red">
+        </footer>
+      </div>
+    </div>
+    <div class="w3-panel w3-leftbar w3-pale-red">
+    <p>An deinem Geschenk ist ein Zettel angeheftet. Es steht dort nur "BDAYBFTTMMJJ"</p>
+    </div>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+    
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
