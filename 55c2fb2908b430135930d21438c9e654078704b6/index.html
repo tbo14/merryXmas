@@ -25,8 +25,10 @@ body, html {
     margin-right: auto;
     width: 50%;
 }
-.marg {
+.margtop {
     margin-top: 20em;
+}
+.margbot {
     margin-bottom: 20em;
 }
 </style>
@@ -61,13 +63,13 @@ body, html {
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">LEERER RAUM</span></h5>
-    <div class="marg">
+    <div class="margtop">
         <div class="w3-panel w3-leftbar w3-pale-red">
             <p>Auf dem Stuhl im Raum liegt etwas?</p>
         </div>
     </div>
     
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black w3-center">Gegenstand angucken</button>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black w3-center margbot">Gegenstand angucken</button>
     <div id="id01" class="w3-modal">
       <div class="w3-modal-content w3-card-4">
         <header class="w3-container w3-pale-red"> 
